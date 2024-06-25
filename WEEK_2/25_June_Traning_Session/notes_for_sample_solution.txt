@@ -1,0 +1,9 @@
+1) find vowels:
+
+        scenario 2: string value has at least 1 vowel
+
+        scenario 2: string has no vowel character --> exception case --> std::character
+        
+        scenario 3: the inpyt container is blank -->exception case ---> break from the loop ( throw an  exception)
+
+        scenario 3: a certain string is blank "" ----> exception case ---> std::cerr

@@ -1,0 +1,4 @@
+fn(xyz val) --> vall by value
+fn(xyz& val)--> call by reference (lvalue)
+fn(xyz&& val)--> rvalue reference
+fn(const xyz& val) --> both lvalue and rvalue

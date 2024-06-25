@@ -1,0 +1,49 @@
+Encapsulation : hinding the data member and the member function by binding them together inside the class
+
+you can restrict the user like what they can do and cannot able to do.
+    class car{
+        //members of the class
+        private:
+            int id;
+            std::stringmodelname;
+        Public:
+            car();//this function works with one or more data members of this class
+
+            void UpdateModelName();
+            
+            void calculateInsurance(); //this function will not work because it doesn't have any member in the class
+
+    }
+
+Abstration : user can focus on the function rather than the functionality of the function.
+    eg., strlen(), were we know it will return length but we dont know about working of the funtion.
+
+
+@ Abstration and Encapsulation are principles of programming
+
+Inheritance :
+   this is to perform generalization and specialization.
+
+Polymorphism
+    -compile time
+    -runtime
+    -[TO BE DISCUSSED IN MODERN CPP]
+    
+*upcasting :: means attaching child type pointer or reference to the parent*
+
+
+*ICE : Internal Combustion Engine
+
+Objective: Application to maintain and process Car related data
+    -Data for ICECar and EvCar are different in format
+        ICECar has id, modelName, price , fuelType and fuel capacity
+        EvCar has id, modelName, price, batteryType, batterCapacity, rated_range
+        Both types of "Car" must be registered with RTO but their registeration cost is different, We need a function to get the callculated value
+
+            For ICECars
+                Petrol has 13% of price as value.
+                Diesel has 15% of price as value for registeration
+            For EvCars
+                flat 3000 is the value.
+
+    

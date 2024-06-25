@@ -1,0 +1,46 @@
+Employee HAS A Project
+
+
+    Aggregation : Aggregated class (Employee) does not control the lifetime
+    of the aggregating class (Project)
+
+
+class Employee
+
+    -id : unsigned int
+    -name : string
+    -_project : Project
+
+
+class Project
+
+    - _id : std::string
+    - teamSize : unsigned int
+    - _budget : float
+
+
+
+
+COMPOSITION
+------------
+<---------------------------------Employee------------------------------>
+[   111100| Harshit |   [  c.Learning | 41 | 1000.0f  ]                   ]
+                        <--------Project-------------->
+
+Aggregation
+------------
+ [  c.Learning | 41 | 1000.0f  ]    
+<--------Project-------------->
+                        |
+                        |
+                        |
+[   111100| Harshit |   Reference-to-a-Project]
+
+
+Container of Projects
+
+
+Container of Employees
+
+
+first-employee<---------->first Project

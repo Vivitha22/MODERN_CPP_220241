@@ -1,0 +1,24 @@
+
+ ----------------------
+|Going to do in vectors|
+ ----------------------
+
+Make a class engine with the following attributes
+    a) an integer id, 
+    b) interger value for horsepower
+    c) float value torque
+
+    Enable default constructor
+    Disable copy constructor & all remaining special member functions 
+    Enable a parameterised constructor to initialize all members
+
+In functionalities.cpp file
+
+    1} createEngines : Create N objects on the heap, 
+                       store in c-style array
+
+    2} AverageHorsepower : Return the average of all valid objects's horsepower
+
+    3} FindTorqueNyId : User gives an id, search it, return respective torque
+
+    4} FindhorsepwerForMinTorqueEngine : Find engine with minimum torque and return its horsepower

@@ -1,0 +1,97 @@
+Modern CPP 
+    -All versions of c++ since c++11
+
+CPP is revised/updated every 3 years
+
+so versions of c++ are: C++ 11, C++ 14, C++17...
+
+5 weeks
+
+    A -> Essentials of modern CPP(fundamentals)
+    B -> Functional programming in Modern CPP
+    C -> Concurrency && c++ 17
+    D -> STL DS & Algorithms
+
+
+-----------------------------------------------------------------------------------------------
+FEATURE 1 : In class initialization
+FEATURE 2 : Enum class
+FEATURE 3 : Enable / disable special member functions aka defaulted/deleted member functions
+
+        You can choose whether to enable or disable 6 special members functions for a class you are creating
+
+            1) default constructor
+            2) destructor
+            3) copy constructor
+            4) copy assignment operator = (overload = operator)
+            5) move construcotr (new feature in c++ 11)
+            6) move assignment operator = (overload = operator for move)
+
+        *if ur enabling the destructor then you should not define it in the cpp file*
+
+FEATURE 4 : Replaced NULL with nullptr
+FEATURE 5 : Unifor initialization
+                We initialize variables in function using {}
+FEATURE 6 :  Member list initialization (line 45)
+FEATURE 7 : AUTO keyword
+    delete and infer the type of variables
+    Based on inital values
+FEATURE 8 : Constructor delegation 
+            YOU CAN TRANSFER/ SHIFT CONTROL OF THE PROGRAM FORM ONE CONSTRUCTOR TO ANOTHER IN THE SAME class
+
+FEATURE 9 : Additional numeric tyepes with specific size in memory
+FEATURE 10 : For-each (range -based for loop )
+FEATURE 11 : emplac data in container (in-place construction of values within the container)
+FEATURE 12 : "using" keyword 
+-----------------------------------------------------------------------------------------------
+
+***************
+DATA STRUCTURES|
+***************
+
+Employee 1 : 28
+Employee 2 : 35
+Employee 3 : 29
+
+arrangements and STRUCTURing of DATA
+
+a) Consecutively, one agter the other in memory 
+    1) No option, for adding no data will be provided
+
+    [       28        |      35       |       29      ]
+          0*100H           0*104H           0*108H
+    2} we can add more data values if required, in future {vector}
+
+    [       28        |      35       |       29      ]
+          0*100H           0*104H           0*108H
+
+    Employee 4 is joined whoes age is 36
+        Employee 4 : 36
+    [       28        |      35       |       29      |       //  (no space for 36)    ]
+          0*100H           0*104H           0*108H          //////
+
+    but we are not confirmed that the location/ memory for 36 have available storage space
+    so in the worst case situation we have to change the region all the datas
+
+            TRANSFER DATA TO A NEW REGION IN MEMORY
+
+    [       28        |      35       |       29      |       36      ]
+          0*200H           0*204H           0*208H          0*212H
+
+    it will take extra time
+    So if your working with large amount data or going to add more data don't use VECTOR 
+
+
+EVERYTHING IS ILLUTION
+
+THERE ISNO ARRAY, THERE IS NO STACK, TJERE IS NO LIST
+
+Data structures and Algorithms in c++
+    adam Drozdek
+
+
+1) Data structures are the arrangements of data, different ways of retrieving or accessing data.
+2) Data structures are theoretical and philosophical. They have to be implemented through code.
+3) Implementations of ds on different platforms or in different libraried may differ in behaviour.
+4) There are "infite" data structures in the world.
+5) Data structure implementations have to follow rules/syntax of the language.

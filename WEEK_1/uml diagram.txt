@@ -1,0 +1,70 @@
+
+Inheritance:
+    one solid line with open arrowhead
+    If a class name is in italic fond then it is a abstract function(virtual)
+
+Associations:
+
+Bi-directional (standard) association:
+    2 class connected with a solid line without arrowheads
+
+Uni assocaitions:
+    it has a solid line but may have a open arrow head or not
+
+Packages:
+    collection of class/files
+
+interface
+    DOTED lines with an unfilled arrowhead.
+
+Aggregation :
+    unfilled diamond with another end has a arrowhead or not
+
+Composition:
+    the diamond is filled towards the composed or aggregated class with another end has a arrowhead or not
+
+
+- private
+* protective
++ public
+
+
+The arrowhead always point to preceding activity.
+
+The <<include>> means that the preceding activity is mandatory.
+
+In <<extend>> means the follow up is exception
+
+
+ACTIVITY DIAGRAM:
+
+Filled poles or rectangles is the fork
+
+multiple activity is merged together is the join
+
+filled diamond is Decision node
+
+
+
+Usecase Diagram:
+ 
+    - Arrowhead always points to the predeeding activity.
+    - include relationship means the preceeding activity must happen/mandatory.
+    - you can use generalization also.
+    - cardinality can also exist.
+    - extend relationship means the following activity is optional.
+ 
+Activity Diagram:
+ 
+- swim lanes (vertical lines)
+    -initial node is a filled circle 
+    - more number of swim lanes indicates that there are more number of functionalities or categories of objects involved in completing the activity.
+    - filled circle indicates starting/first step of an activity
+    - rectangle/curved rectangles indicates steps in the activity
+    - direction of the arrow indicates the flow of the activity
+    - extra notations/sticky notes indicates any steps required 
+    - filled rectangles indicates fork which says that a task is divided into sub-tasks
+    - vice versa also and is called joining
+    - the filled circle inside a open circle indicates the final node of the activity
+
+ 
