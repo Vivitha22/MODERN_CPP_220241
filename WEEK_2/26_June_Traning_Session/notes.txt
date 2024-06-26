@@ -1,0 +1,53 @@
+week agenda:
+
+    week 2 :functional programming
+
+supplementary concepts
+
+    1)containers in c++
+        -->vector and c-stylearray
+    2) move semantics
+
+    3)RAII Class
+
+    4) git version control
+
+    5) command-line utilities
+
+    6) how to interact with large scale projects
+
+    7) recursion and other styles of programming
+
+What are iterators
+
+1) cstyle array
+
+    10         20          30
+
+
+
+
+
+
+
+For consecutive elements
+
+    from base-location to last element location (size-1)
+        -access element as 
+            base address _(location*size of each element)
+
+For linked list
+
+    from first location:
+        - dereference to reach the element. access it 
+        - now , read the address for the next element.
+        - if next pointer is nullptr, break;
+        - else, repeat steps
+
+    universal algorithm
+
+    a) for every element feched from the containers 
+        (DONT GIVE A DAMN HOW YOU GET IT),
+            -access the element and do something with it
+
+iterators are abstruction over pointer to an element
