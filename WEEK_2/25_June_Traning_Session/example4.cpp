@@ -11,7 +11,7 @@
     a) functins have a properly recognizable types.
     b) functions can be passed as parameters to the functions
     c) functions can be returned as parameters from the functions (closures)
-    d) functions can be addressed.copied into another variable
+    d) functions can be addressed/copied into another variable
 
                 or
 
