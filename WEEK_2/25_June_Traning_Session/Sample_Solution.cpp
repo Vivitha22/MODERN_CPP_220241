@@ -31,10 +31,10 @@ using datacontainer = std::vector<std::string>;
 
 void Adaptor(container fn, datacontainer& data ){
     if(data.empty()){
-        std::invalid_argument("Data is empty\n");
+        std::invalid_argument("Data is empty\n");//exit
     }
     for ( const std::string& st:data){
-        fn(st);
+        fn(st); //findVowels
     }
 }
 

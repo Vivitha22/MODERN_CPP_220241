@@ -29,7 +29,7 @@ void Cube(int32_t number){
 
 // }
 
-void Adaptor(void (*fn)(int32_t number),std::vector<int32_t>& data)
+void Adaptor(void (*fn)(int32_t number) ,std::vector<int32_t>& data)
 {
     //for each number in data, run the function with the number
     for(int32_t val:data){
