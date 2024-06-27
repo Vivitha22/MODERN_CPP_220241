@@ -12,7 +12,7 @@
 #include<functional>
 
 void Demo(void(*ptr) ( int n1, int n2)){
-    ptr(10,20);
+    ptr(30,20);
 }
 
 int main(){

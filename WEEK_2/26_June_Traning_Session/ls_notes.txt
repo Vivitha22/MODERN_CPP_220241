@@ -1,0 +1,26 @@
+pwd - present working documents
+
+using ls we can see the documetns in the current folder
+
+if we use ls and didn't provide any address, then it takes current location
+
+ex2:
+    ls  ~/Desktop/      ~/Documents/   
+by using ls with the paths we can see all the documents and you can also see 2 different files can be open--->(ex2)
+
+ex3:
+    ls --help 
+this will help to see the options which you can use 
+
+We can use these by:
+    ls -l  ~/Desktop/ --->shows you the time and date of last recent access and shows the size in long form
+
+    ls -lh ~/Desktop/  ->> shows you the size in kb
+
+    ls -lhr ~/Desktop/  ->> shows you the size in kb and with alphabetical order
+
+    ls -r ~/Desktop/ -->shows you the files with alphabetical order
+
+    ls -R ~/Desktop/Modern_cpp/ ---> this will show all the files in this directory
+
+    ls -a ~/Desktop/Modern_cpp/ ---> this will show you all the hiden files

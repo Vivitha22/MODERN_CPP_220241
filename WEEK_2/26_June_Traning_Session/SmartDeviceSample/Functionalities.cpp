@@ -54,6 +54,7 @@ void FindMaxGSTDeviceId(const SmartDevice **devices, unsigned int size)
     std::cout << id << "\n";
 
 }
+
 void FilterDevies(Predicate fn, const SmartDevice **devices, const unsigned int size)
 {
     bool atleastOneMatchingDeviceFound = false;

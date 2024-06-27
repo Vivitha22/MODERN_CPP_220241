@@ -11,9 +11,9 @@
 #include<iostream>
 #include<functional>
 
-void add(int32_t n1, int32_t n2){
-    std::cout<<n1+n2<<"\n";
-}
+// void add(int32_t n1, int32_t n2){
+//     std::cout<<n1+n2<<"\n";
+// }
 
 int main(){
     /*
