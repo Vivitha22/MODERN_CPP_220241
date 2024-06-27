@@ -1,21 +1,40 @@
 #include "Functionalities.h"
 
-void CreateObjects(Employee **employees, Project **projects, unsigned int size)
+void CreateObjects(EmployeeContainer employees, projectContainer projects)
 {
-    projects[0] = new Project("c.111", 10, 1000.0f);
-    employees[0] = new Employee(101, "Harshit", *projects[0]);
+    projects.emplace_back(new Project("c.111", 10, 1000.0f));
+    projects.emplace_back(new Project("c.221", 50, 11000.0f));
+    projects.emplace_back(new Project("c.331", 20, 10000.0f));
+    
+    auto itr = projects.begin(); //itr is pointing to the beginnng of the projects list
 
-    projects[1] = new Project("c.221", 50, 11000.0f);
-    employees[1] = new Employee(101, "Rohan", *projects[1]);
-
-    projects[2] = new Project("c.331", 20, 10000.0f);
-    employees[2] = new Employee(101, "Riya", *projects[2]);
+    employees.emplace_back(new Employee(101, "Harshit", **itr++));
+    employees.emplace_back(new Employee(102, "Rohan", **itr++));
+    employees.emplace_back(new Employee(103, "Riya", **itr++));
 }
 
-void Deallocate(Employee **employees, Project **projects, unsigned int size)
+void Deallocate(EmployeeContainer employees, projectContainer projects)
 {
-    for(unsigned int i = 0; i < size; i++ ) {
-        delete projects[i];
-        delete employees[i];
+    for(Employee* emp :employees){
+        delete emp;
+    }
+    for(Project* p: projects){
+        delete p;
+    }
+}
+
+void filterEmployees(const predicate fn, const EmployeeContainer &employees)
+{
+    for(const Employee* emp : employees){
+        if(fn(emp)){
+            std::cout<< *emp <<"\n";
+        }
+    }
+}
+
+void DisplayProjectBudget(const EmployeeContainer &employees)
+{
+    for(const Employee* emp:employees){
+        std::cout<<emp->project().get().budget()<<"\n";
     }
 }
