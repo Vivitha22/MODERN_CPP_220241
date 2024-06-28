@@ -15,6 +15,10 @@ public:
 
     float budget() const { return _budget; }
 
+    unsigned int teamSize() const { return _teamSize; }
+
+    // float budget() const { return _budget; }
+
     friend std::ostream &operator<<(std::ostream &os, const Project &rhs) {
         os << "_id: " << rhs._id
            << " _teamSize: " << rhs._teamSize

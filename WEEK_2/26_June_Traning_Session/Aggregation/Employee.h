@@ -20,6 +20,8 @@ public:
 
     ProjectRef project() const { return _project; }
 
+    // ProjectRef project() const { return _project; }
+
 
     friend std::ostream &operator<<(std::ostream &os, const Employee &rhs) {
         os << "_id: " << rhs._id

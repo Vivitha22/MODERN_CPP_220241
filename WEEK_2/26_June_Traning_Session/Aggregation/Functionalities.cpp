@@ -1,6 +1,6 @@
 #include "Functionalities.h"
 
-void CreateObjects(EmployeeContainer employees, projectContainer projects)
+void CreateObjects(EmployeeContainer& employees, projectContainer& projects)
 {
     projects.emplace_back(new Project("c.111", 10, 1000.0f));
     projects.emplace_back(new Project("c.221", 50, 11000.0f));

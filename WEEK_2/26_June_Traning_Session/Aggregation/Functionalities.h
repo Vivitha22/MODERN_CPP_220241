@@ -8,7 +8,7 @@ using EmployeeContainer = std::list<Employee*>;
 using projectContainer = std::list<Project*>;
 using predicate = std::function<bool(const Employee*)>;
 
-void CreateObjects(EmployeeContainer employees, projectContainer projects);
+void CreateObjects(EmployeeContainer& employees, projectContainer& projects);
 
 
 
