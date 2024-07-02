@@ -1,0 +1,616 @@
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread: In instantiation of ‘static std::thread::_Invoker<std::tuple<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...> > std::thread::__make_invoker(_Callable&&, _Args&& ...) [with _Callable = void (MathOperation::*)(); _Args = {MathOperation}; typename std::decay<_Tp>::type = void (MathOperation::*)()]’:
+/usr/include/c++/9/thread:131:22:   required from ‘std::thread::thread(_Callable&&, _Args&& ...) [with _Callable = void (MathOperation::*)(); _Args = {MathOperation}; <template-parameter-1-3> = void]’
+example4.cpp:31:62:   required from here
+/usr/include/c++/9/thread:267:4: error: no matching function for call to ‘std::tuple<void (MathOperation::*)(), MathOperation>::tuple(<brace-enclosed initializer list>)’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1199:18: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, std::pair<_U1, _U2>&&)’
+ 1199 |         explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |                  ^~~~~
+/usr/include/c++/9/tuple:1199:18: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1189:9: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, std::pair<_U1, _U2>&&)’
+ 1189 |         tuple(allocator_arg_t __tag, const _Alloc& __a, pair<_U1, _U2>&& __in)
+      |         ^~~~~
+/usr/include/c++/9/tuple:1189:9: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1179:18: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && (! _ImplicitlyConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const std::pair<_U1, _U2>&)’
+ 1179 |         explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |                  ^~~~~
+/usr/include/c++/9/tuple:1179:18: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1169:9: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && _ImplicitlyConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const std::pair<_U1, _U2>&)’
+ 1169 |         tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |         ^~~~~
+/usr/include/c++/9/tuple:1169:9: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1158:11: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_U1, _U2>&&)’
+ 1158 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:1158:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1148:2: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_U1, _U2>&&)’
+ 1148 |  tuple(allocator_arg_t __tag, const _Alloc& __a, tuple<_U1, _U2>&& __in)
+      |  ^~~~~
+/usr/include/c++/9/tuple:1148:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1136:11: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && (! _ImplicitlyConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_U1, _U2>&)’
+ 1136 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:1136:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1124:2: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && _ImplicitlyConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_U1, _U2>&)’
+ 1124 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:1124:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1115:2: note: candidate: ‘template<class _Alloc> std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_T1, _T2>&&)’
+ 1115 |  tuple(allocator_arg_t __tag, const _Alloc& __a, tuple&& __in)
+      |  ^~~~~
+/usr/include/c++/9/tuple:1115:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1111:2: note: candidate: ‘template<class _Alloc> std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_T1, _T2>&)’
+ 1111 |  tuple(allocator_arg_t __tag, const _Alloc& __a, const tuple& __in)
+      |  ^~~~~
+/usr/include/c++/9/tuple:1111:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1105:11: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, _U1&&, _U2&&)’
+ 1105 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:1105:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 4 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1095:2: note: candidate: ‘template<class _Alloc, class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, _U1&&, _U2&&)’
+ 1095 |  tuple(allocator_arg_t __tag, const _Alloc& __a, _U1&& __a1, _U2&& __a2)
+      |  ^~~~~
+/usr/include/c++/9/tuple:1095:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 4 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1085:11: note: candidate: ‘template<class _Alloc, class _Dummy, typename std::enable_if<(std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ConstructibleTuple<void (MathOperation::*)(), MathOperation>() && (! std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ImplicitlyConvertibleTuple<void (MathOperation::*)(), MathOperation>())), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const _T1&, const _T2&)’
+ 1085 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:1085:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 4 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1073:2: note: candidate: ‘template<class _Alloc, class _Dummy, typename std::enable_if<(std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ConstructibleTuple<void (MathOperation::*)(), MathOperation>() && std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ImplicitlyConvertibleTuple<void (MathOperation::*)(), MathOperation>()), bool>::type <anonymous> > std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&, const _T1&, const _T2&)’
+ 1073 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:1073:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 4 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1062:2: note: candidate: ‘template<class _Alloc> std::tuple<_T1, _T2>::tuple(std::allocator_arg_t, const _Alloc&)’
+ 1062 |  tuple(allocator_arg_t __tag, const _Alloc& __a)
+      |  ^~~~~
+/usr/include/c++/9/tuple:1062:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   cannot convert ‘std::forward<void (MathOperation::*)()>((* & __callable))’ (type ‘void (MathOperation::*)()’) to type ‘std::allocator_arg_t’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1055:28: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(std::pair<_U1, _U2>&&)’
+ 1055 |         explicit constexpr tuple(pair<_U1, _U2>&& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:1055:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1045:19: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(std::pair<_U1, _U2>&&)’
+ 1045 |         constexpr tuple(pair<_U1, _U2>&& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:1045:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1036:28: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && (! _ImplicitlyConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const std::pair<_U1, _U2>&)’
+ 1036 |         explicit constexpr tuple(const pair<_U1, _U2>& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:1036:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1027:19: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && _ImplicitlyConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const std::pair<_U1, _U2>&)’
+ 1027 |         constexpr tuple(const pair<_U1, _U2>& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:1027:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1018:28: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(std::tuple<_U1, _U2>&&)’
+ 1018 |         explicit constexpr tuple(tuple<_U1, _U2>&& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:1018:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘std::tuple<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1009:19: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(std::tuple<_U1, _U2>&&)’
+ 1009 |         constexpr tuple(tuple<_U1, _U2>&& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:1009:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘std::tuple<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:1000:28: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && (! _ImplicitlyConvertibleTuple<_U1, _U2>())), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const std::tuple<_U1, _U2>&)’
+ 1000 |         explicit constexpr tuple(const tuple<_U1, _U2>& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:1000:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘const std::tuple<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:991:19: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<(_ConstructibleTuple<_U1, _U2>() && _ImplicitlyConvertibleTuple<_U1, _U2>()), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const std::tuple<_U1, _U2>&)’
+  991 |         constexpr tuple(const tuple<_U1, _U2>& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:991:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   mismatched types ‘const std::tuple<_T1, _T2>’ and ‘void (MathOperation::*)()’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:983:17: note: candidate: ‘constexpr std::tuple<_T1, _T2>::tuple(std::tuple<_T1, _T2>&&) [with _T1 = void (MathOperation::*)(); _T2 = MathOperation]’
+  983 |       constexpr tuple(tuple&&) = default;
+      |                 ^~~~~
+/usr/include/c++/9/tuple:983:17: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/9/tuple:978:28: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<((_MoveConstructibleTuple<_U1, _U2>() && (! _ImplicitlyMoveConvertibleTuple<_U1, _U2>())) && (! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::allocator_arg_t>::value)), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(_U1&&, _U2&&)’
+  978 |         explicit constexpr tuple(_U1&& __a1, _U2&& __a2)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:978:28: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:977:16: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  977 |  bool>::type = false>
+      |                ^~~~~
+/usr/include/c++/9/tuple:968:19: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<((_MoveConstructibleTuple<_U1, _U2>() && _ImplicitlyMoveConvertibleTuple<_U1, _U2>()) && (! std::is_same<typename std::remove_cv<typename std::remove_reference<_Tp>::type>::type, std::allocator_arg_t>::value)), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(_U1&&, _U2&&)’
+  968 |         constexpr tuple(_U1&& __a1, _U2&& __a2)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:968:19: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:967:16: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  967 |  bool>::type = true>
+      |                ^~~~
+/usr/include/c++/9/tuple:954:28: note: candidate: ‘template<class _Dummy, typename std::enable_if<(std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ConstructibleTuple<void (MathOperation::*)(), MathOperation>() && (! std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ImplicitlyConvertibleTuple<void (MathOperation::*)(), MathOperation>())), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const _T1&, const _T2&)’
+  954 |         explicit constexpr tuple(const _T1& __a1, const _T2& __a2)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:954:28: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:953:16: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  953 |  bool>::type = false>
+      |                ^~~~~
+/usr/include/c++/9/tuple:945:19: note: candidate: ‘template<class _Dummy, typename std::enable_if<(std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ConstructibleTuple<void (MathOperation::*)(), MathOperation>() && std::_TC<std::is_same<_Dummy, void>::value, void (MathOperation::*)(), MathOperation>::_ImplicitlyConvertibleTuple<void (MathOperation::*)(), MathOperation>()), bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple(const _T1&, const _T2&)’
+  945 |         constexpr tuple(const _T1& __a1, const _T2& __a2)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:945:19: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:944:16: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  944 |  bool>::type = true>
+      |                ^~~~
+/usr/include/c++/9/tuple:931:21: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<std::__and_<std::is_default_constructible<_Tp>, std::is_default_constructible<_Dp>, std::__not_<std::__and_<std::__is_implicitly_default_constructible<_U1>, std::__is_implicitly_default_constructible<_U2> > > >::value, bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple()’
+  931 |  explicit constexpr tuple()
+      |                     ^~~~~
+/usr/include/c++/9/tuple:931:21: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 0 arguments, 2 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:918:12: note: candidate: ‘template<class _U1, class _U2, typename std::enable_if<std::__and_<std::__is_implicitly_default_constructible<_U1>, std::__is_implicitly_default_constructible<_U2> >::value, bool>::type <anonymous> > constexpr std::tuple<_T1, _T2>::tuple()’
+  918 |  constexpr tuple()
+      |            ^~~~~
+/usr/include/c++/9/tuple:918:12: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 0 arguments, 2 provided
+  267 |  } };
+      |    ^
+/usr/include/c++/9/thread:267:4: error: could not convert ‘{<expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::thread::_Invoker<std::tuple<void (MathOperation::*)(), MathOperation> >’
+/usr/include/c++/9/thread: In instantiation of ‘static std::thread::_Invoker<std::tuple<typename std::decay<_Tp>::type, typename std::decay<_Args>::type ...> > std::thread::__make_invoker(_Callable&&, _Args&& ...) [with _Callable = MathOperation&; _Args = {}; typename std::decay<_Tp>::type = MathOperation]’:
+/usr/include/c++/9/thread:131:22:   required from ‘std::thread::thread(_Callable&&, _Args&& ...) [with _Callable = MathOperation&; _Args = {}; <template-parameter-1-3> = void]’
+example4.cpp:36:23:   required from here
+/usr/include/c++/9/thread:267:4: error: no matching function for call to ‘std::tuple<MathOperation>::tuple(<brace-enclosed initializer list>)’
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:808:11: note: candidate: ‘template<class _Alloc, class _Dummy, class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>())) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<tuple<_Tail ...>&&>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&)’
+  808 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:808:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:793:2: note: candidate: ‘template<class _Alloc, class _Dummy, class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>()) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<tuple<_Tail ...>&&>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Args2 ...>&&)’
+  793 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:793:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:778:11: note: candidate: ‘template<class _Alloc, class _Dummy, class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_ConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyConvertibleTuple<_UElements ...>())) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<const tuple<_Tail ...>&>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&)’
+  778 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:778:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:763:2: note: candidate: ‘template<class _Alloc, class _Dummy, class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_ConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyConvertibleTuple<_UElements ...>()) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<const tuple<_Tail ...>&>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Args2 ...>&)’
+  763 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:763:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:751:2: note: candidate: ‘template<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, std::tuple<_Elements>&&)’
+  751 |  tuple(allocator_arg_t __tag, const _Alloc& __a, tuple&& __in)
+      |  ^~~~~
+/usr/include/c++/9/tuple:751:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:747:2: note: candidate: ‘template<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const std::tuple<_Elements>&)’
+  747 |  tuple(allocator_arg_t __tag, const _Alloc& __a, const tuple& __in)
+      |  ^~~~~
+/usr/include/c++/9/tuple:747:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:741:11: note: candidate: ‘template<class _Alloc, class ... _UElements, typename std::enable_if<(std::tuple<MathOperation>::_TMC<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMC<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>())), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...)’
+  741 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:741:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects at least 2 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:730:2: note: candidate: ‘template<class _Alloc, class ... _UElements, typename std::enable_if<(std::tuple<MathOperation>::_TMC<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMC<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, _UElements&& ...)’
+  730 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:730:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects at least 2 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:720:11: note: candidate: ‘template<class _Alloc, class _Dummy, typename std::enable_if<(std::tuple<MathOperation>::_TCC<_Dummy>::_ConstructibleTuple<MathOperation>() && (! std::tuple<MathOperation>::_TCC<_Dummy>::_ImplicitlyConvertibleTuple<MathOperation>())), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...)’
+  720 |  explicit tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |           ^~~~~
+/usr/include/c++/9/tuple:720:11: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:709:2: note: candidate: ‘template<class _Alloc, class _Dummy, typename std::enable_if<(std::tuple<MathOperation>::_TCC<_Dummy>::_ConstructibleTuple<MathOperation>() && std::tuple<MathOperation>::_TCC<_Dummy>::_ImplicitlyConvertibleTuple<MathOperation>()), bool>::type <anonymous> > std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&, const _Elements& ...)’
+  709 |  tuple(allocator_arg_t __tag, const _Alloc& __a,
+      |  ^~~~~
+/usr/include/c++/9/tuple:709:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 3 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:699:2: note: candidate: ‘template<class _Alloc> std::tuple<_Elements>::tuple(std::allocator_arg_t, const _Alloc&)’
+  699 |  tuple(allocator_arg_t __tag, const _Alloc& __a)
+      |  ^~~~~
+/usr/include/c++/9/tuple:699:2: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 2 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:693:28: note: candidate: ‘template<class ... _UElements, class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>())) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<tuple<_Tps ...>&&>()), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&)’
+  693 |         explicit constexpr tuple(tuple<_UElements...>&& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:693:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   ‘MathOperation’ is not derived from ‘std::tuple<_Tps ...>’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:682:19: note: candidate: ‘template<class ... _UElements, class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>()) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<tuple<_Tps ...>&&>()), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(std::tuple<_Args1 ...>&&)’
+  682 |         constexpr tuple(tuple<_UElements...>&& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:682:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   ‘MathOperation’ is not derived from ‘std::tuple<_Tps ...>’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:670:28: note: candidate: ‘template<class ... _UElements, class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_ConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyConvertibleTuple<_UElements ...>())) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<const tuple<_Tps ...>&>()), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&)’
+  670 |         explicit constexpr tuple(const tuple<_UElements...>& __in)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:670:28: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   ‘MathOperation’ is not derived from ‘const std::tuple<_Tps ...>’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:658:19: note: candidate: ‘template<class ... _UElements, class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TMCT<_UElements ...>::_ConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMCT<_UElements ...>::_ImplicitlyConvertibleTuple<_UElements ...>()) && std::tuple<MathOperation>::_TNTC<_Dummy>::_NonNestedTuple<const tuple<_Tps ...>&>()), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const std::tuple<_Args1 ...>&)’
+  658 |         constexpr tuple(const tuple<_UElements...>& __in)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:658:19: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   ‘MathOperation’ is not derived from ‘const std::tuple<_Tps ...>’
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:642:17: note: candidate: ‘constexpr std::tuple<_Elements>::tuple(std::tuple<_Elements>&&) [with _Elements = {MathOperation}]’
+  642 |       constexpr tuple(tuple&&) = default;
+      |                 ^~~~~
+/usr/include/c++/9/tuple:642:23: note:   no known conversion for argument 1 from ‘MathOperation’ to ‘std::tuple<MathOperation>&&’
+  642 |       constexpr tuple(tuple&&) = default;
+      |                       ^~~~~~~
+/usr/include/c++/9/tuple:637:28: note: candidate: ‘template<class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMC<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && (! std::tuple<MathOperation>::_TMC<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>())) && (1 >= 1)), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...)’
+  637 |         explicit constexpr tuple(_UElements&&... __elements)
+      |                            ^~~~~
+/usr/include/c++/9/tuple:637:28: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:636:21: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  636 |         bool>::type=false>
+      |                     ^~~~~
+/usr/include/c++/9/tuple:626:19: note: candidate: ‘template<class ... _UElements, typename std::enable_if<((std::tuple<MathOperation>::_TMC<_UElements ...>::_MoveConstructibleTuple<_UElements ...>() && std::tuple<MathOperation>::_TMC<_UElements ...>::_ImplicitlyMoveConvertibleTuple<_UElements ...>()) && (1 >= 1)), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(_UElements&& ...)’
+  626 |         constexpr tuple(_UElements&&... __elements)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:626:19: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:625:21: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  625 |         bool>::type=true>
+      |                     ^~~~
+/usr/include/c++/9/tuple:599:26: note: candidate: ‘template<class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TCC<_Dummy>::_ConstructibleTuple<MathOperation>() && (! std::tuple<MathOperation>::_TCC<_Dummy>::_ImplicitlyConvertibleTuple<MathOperation>())) && (1 >= 1)), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...)’
+  599 |       explicit constexpr tuple(const _Elements&... __elements)
+      |                          ^~~~~
+/usr/include/c++/9/tuple:599:26: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:598:28: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  598 |                bool>::type=false>
+      |                            ^~~~~
+/usr/include/c++/9/tuple:588:19: note: candidate: ‘template<class _Dummy, typename std::enable_if<((std::tuple<MathOperation>::_TCC<_Dummy>::_ConstructibleTuple<MathOperation>() && std::tuple<MathOperation>::_TCC<_Dummy>::_ImplicitlyConvertibleTuple<MathOperation>()) && (1 >= 1)), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple(const _Elements& ...)’
+  588 |         constexpr tuple(const _Elements&... __elements)
+      |                   ^~~~~
+/usr/include/c++/9/tuple:588:19: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/tuple:587:28: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+  587 |                bool>::type=true>
+      |                            ^~~~
+/usr/include/c++/9/tuple:571:26: note: candidate: ‘template<class _Dummy, typename std::enable_if<(std::tuple<MathOperation>::_TC2<_Dummy>::_DefaultConstructibleTuple() && (! std::tuple<MathOperation>::_TC2<_Dummy>::_ImplicitlyDefaultConstructibleTuple())), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple()’
+  571 |       explicit constexpr tuple()
+      |                          ^~~~~
+/usr/include/c++/9/tuple:571:26: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 0 arguments, 1 provided
+  267 |  } };
+      |    ^
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple:561:17: note: candidate: ‘template<class _Dummy, typename std::enable_if<std::tuple<MathOperation>::_TC2<_Dummy>::_ImplicitlyDefaultConstructibleTuple(), bool>::type <anonymous> > constexpr std::tuple<_Elements>::tuple()’
+  561 |       constexpr tuple()
+      |                 ^~~~~
+/usr/include/c++/9/tuple:561:17: note:   template argument deduction/substitution failed:
+In file included from example4.cpp:2:
+/usr/include/c++/9/thread:267:4: note:   candidate expects 0 arguments, 1 provided
+  267 |  } };
+      |    ^
+/usr/include/c++/9/thread:267:4: error: could not convert ‘{<expression error>}’ from ‘<brace-enclosed initializer list>’ to ‘std::thread::_Invoker<std::tuple<MathOperation> >’
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple: In instantiation of ‘constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(_UHead&&) [with _UHead = MathOperation; long unsigned int _Idx = 0; _Head = MathOperation]’:
+/usr/include/c++/9/tuple:360:49:   required from ‘constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(std::_Tuple_impl<_Idx, _Head>&&) [with long unsigned int _Idx = 0; _Head = MathOperation]’
+/usr/include/c++/9/tuple:642:17:   required from ‘std::thread::_State_impl<_Callable>::_State_impl(_Callable&&) [with _Callable = std::thread::_Invoker<std::tuple<MathOperation> >]’
+/usr/include/c++/9/thread:206:20:   required from ‘static std::thread::_State_ptr std::thread::_S_make_state(_Callable&&) [with _Callable = std::thread::_Invoker<std::tuple<MathOperation> >; std::thread::_State_ptr = std::unique_ptr<std::thread::_State>]’
+/usr/include/c++/9/thread:130:38:   required from ‘std::thread::thread(_Callable&&, _Args&& ...) [with _Callable = MathOperation&; _Args = {}; <template-parameter-1-3> = void]’
+example4.cpp:36:23:   required from here
+/usr/include/c++/9/tuple:133:42: error: use of deleted function ‘MathOperation::MathOperation(MathOperation&&)’
+  133 |  : _M_head_impl(std::forward<_UHead>(__h)) { }
+      |                                          ^
+example4.cpp:13:5: note: declared here
+   13 |     MathOperation(MathOperation&&)= delete;
+      |     ^~~~~~~~~~~~~
+In file included from /usr/include/c++/9/bits/unique_ptr.h:37,
+                 from /usr/include/c++/9/memory:80,
+                 from /usr/include/c++/9/thread:39,
+                 from example4.cpp:2:
+/usr/include/c++/9/tuple: In instantiation of ‘constexpr std::_Head_base<_Idx, _Head, false>::_Head_base(_UHead&&) [with _UHead = MathOperation; long unsigned int _Idx = 1; _Head = MathOperation]’:
+/usr/include/c++/9/tuple:360:49:   required from ‘constexpr std::_Tuple_impl<_Idx, _Head>::_Tuple_impl(std::_Tuple_impl<_Idx, _Head>&&) [with long unsigned int _Idx = 1; _Head = MathOperation]’
+/usr/include/c++/9/tuple:231:42:   required from ‘constexpr std::_Tuple_impl<_Idx, _Head, _Tail ...>::_Tuple_impl(std::_Tuple_impl<_Idx, _Head, _Tail ...>&&) [with long unsigned int _Idx = 0; _Head = void (MathOperation::*)(); _Tail = {MathOperation}]’
+/usr/include/c++/9/tuple:983:17:   required from ‘std::thread::_State_impl<_Callable>::_State_impl(_Callable&&) [with _Callable = std::thread::_Invoker<std::tuple<void (MathOperation::*)(), MathOperation> >]’
+/usr/include/c++/9/thread:206:20:   required from ‘static std::thread::_State_ptr std::thread::_S_make_state(_Callable&&) [with _Callable = std::thread::_Invoker<std::tuple<void (MathOperation::*)(), MathOperation> >; std::thread::_State_ptr = std::unique_ptr<std::thread::_State>]’
+/usr/include/c++/9/thread:130:38:   required from ‘std::thread::thread(_Callable&&, _Args&& ...) [with _Callable = void (MathOperation::*)(); _Args = {MathOperation}; <template-parameter-1-3> = void]’
+example4.cpp:31:62:   required from here
+/usr/include/c++/9/tuple:133:42: error: use of deleted function ‘MathOperation::MathOperation(MathOperation&&)’
+  133 |  : _M_head_impl(std::forward<_UHead>(__h)) { }
+      |                                          ^
+example4.cpp:13:5: note: declared here
+   13 |     MathOperation(MathOperation&&)= delete;
+      |     ^~~~~~~~~~~~~
