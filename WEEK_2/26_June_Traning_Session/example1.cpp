@@ -11,17 +11,17 @@
 #include<iostream>
 #include<functional>
 
-// void add(int32_t n1, int32_t n2){
-//     std::cout<<n1+n2<<"\n";
-// }
+void add(int32_t n1, int32_t n2){
+    std::cout<<n1+n2<<"\n";
+}
 
 int main(){
     /*
         lambda object is bound to fn variable in the scope of main function
     */
-
-    auto fn= [](int32_t n1, int32_t n2){ std::cout<<n1 + n2 <<"\n";};
-    fn(10,20); //overloaded() operator of a class created in the background
+   int n1=10;
+    auto fn= [n1]( int32_t n2){ std::cout<<n1 + n2 <<"\n";};
+    fn(20); //overloaded() operator of a class created in the background
 }
 
 
@@ -43,13 +43,13 @@ int main(){
 
     example3 : use n1 as captured variable. n1 should be coped into the lambda
 
-        auto fn=[n1] (int n1, int n2){std::cout << n1+n2;};
+        auto fn=[n1] (int n2){std::cout << n1+n2;};
         fn(n2); // only n2 is passed as n1 we already captured
     
     example4 : use n1 as captured variable. n1 should be referred into the lambda
 
         auto fn [ &n1 ] (int n2){std::cout<<n1+n2; };
-        fn(n2); //only n2 is passed as n1 was alreay captured by regerence
+        fn(n2); //only n2 is passed as n1 was alreay captured by reference
 
     example 5 : capture all variables from the surrounding (make them all accessible in the lambda). {copies everything into the lambda when they are accessed int the body of the lambda}
 

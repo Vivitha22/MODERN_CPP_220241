@@ -7,7 +7,6 @@
 
 using ProjectRef = std::reference_wrapper<Project>;
 
-
 class Employee 
 {
 private:

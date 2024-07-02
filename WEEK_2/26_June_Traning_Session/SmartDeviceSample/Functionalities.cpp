@@ -20,6 +20,7 @@ void CreateObjects(SmartDevice** devices, unsigned int size){
     devices[2] = new SmartDevice("103", "SmartBand", 2000.0f, Technology::BLUETOOTH, values3);
 }
 
+
 void Deallocate(const SmartDevice** devices, const unsigned int size){
     for(unsigned int i = 0; i < size; i++) {
         delete[] devices[i]->arr(); //delete the float values array for this object first.
@@ -50,6 +51,8 @@ void FindMaxGSTDeviceId(const SmartDevice **devices, unsigned int size)
             id = devices[i]->id();
         }
     }
+
+
 
     std::cout << id << "\n";
 

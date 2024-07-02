@@ -2,7 +2,7 @@
 #include<functional>
 
 /*
-    std::function<T> is a wrapper that can be used to represent a collable of a certain signature <T>
+    std::function<T> is a wrapper that can be used to represent a callable of a certain signature <T>
     since this entire data declaration is lengthy, we can create an alias for it with using keyword
 
     [](int32_t number) {return  number %2 ==0; } // lambda
@@ -28,8 +28,6 @@ void Adaptor( Predicate fn, int32_t* arr, unsigned int size){
         for every index "i" in the range of size of arr,
         call fn by passing arr[i] (ith position value in the array)
     */
-
-
     for(int32_t i=0;i<size; i++){
         if( fn(arr[i]) ){
             std::cout<<arr[i]<<"\n";
@@ -37,13 +35,13 @@ void Adaptor( Predicate fn, int32_t* arr, unsigned int size){
     }
 }
 
+
 int main(){
     auto fn=[](int32_t number) { return  number % 2 == 0; };
     int32_t arr[3]={11,18,21};
     Adaptor(fn,arr,3);
 
     // [](int n){return n;};
-
 }
 
 

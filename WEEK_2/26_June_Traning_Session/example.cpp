@@ -1,10 +1,11 @@
 /*
      more about lambdas
       1} WHA ARE THEY EXACTLY?
+        object o an anonymous class in the background created by the compiler 
       2) WHAT IS [] WITH ALMBAS?
         if we want to access objects. variables created in the closing function of the lambda, we use[] i.e,. capture closure
 
-    3) some wierd things about lambdas.
+    3) some wierd things about lambdas
 */
 
 

@@ -13,7 +13,7 @@ void CreateObjects(EmployeeContainer& employees, projectContainer& projects);
 
 
 
-void Deallocate(EmployeeContainer employees, projectContainer projects);
+void Deallocate(EmployeeContainer& employees, projectContainer& projects);
 
 /* 
     add features to filter employees based on filter predicates

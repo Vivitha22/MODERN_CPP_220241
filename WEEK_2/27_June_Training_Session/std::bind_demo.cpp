@@ -31,7 +31,7 @@ int main(){
 
     swap_formula(10,20,30); //this means swap_formula(20,30,10)
 
-    auto weired_mapped_function = std::bind(&formula, 100,200, std::placeholders::_2);
+    auto weired_mapped_function = std::bind(&formula, 100,200, std::placeholders::_1);
 
     weired_mapped_function(99,10); //the 99 will be discarded cause we're using only the second value i.e., _1 was not used
 }

@@ -17,13 +17,13 @@
 #include<iostream>
 #include<vector>
 
+
 void Square(int32_t number){
     std::cout<<number*number<<"\n";
 }
 void Cube(int32_t number){
     std::cout<<number * number * number<<"\n";
 }
-
 
 // void Adaptor(     fn     , std::vector<int32_t> & data){ 
 
@@ -42,8 +42,8 @@ int main(){
     std::vector<int32_t> data {1,2,3,4,5};
     // for(int i:data)
     // {
-        Adaptor(&Cube, data);
-        Adaptor(&Square, data);
+    Adaptor(&Cube, data);
+    Adaptor(&Square, data);
     // }
     // Adaptor(&Cube, data);
     // Adaptor(&Square, data);

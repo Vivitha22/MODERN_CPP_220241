@@ -28,6 +28,7 @@ public:
 
 int main(){
     Data obj {18}; //m_value is 18
+    
     obj.displayReading(100); //100 is the factor
     
     //or

@@ -34,7 +34,7 @@ int main(){
         a function which accepts on int32_t by value, returns void    
     */
    //rule 1
-    auto fn = [](const int32_t val){std::cout<<val * val ; };
+    auto fn = [](const int32_t val){std::cout<<val * val ;};
 
     //rule2
     Magic(fn); //works
@@ -49,7 +49,7 @@ int main(){
 
 
     //rule5
-    std::vector<    std::function<void(int32_t)>  > fns{fn};
+    std::vector<std::function<void(int32_t)>  > fns{fn};
 
 
 }

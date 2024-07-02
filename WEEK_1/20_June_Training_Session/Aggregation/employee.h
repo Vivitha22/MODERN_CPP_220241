@@ -18,9 +18,9 @@ public:
     ~employee();
 
     employee(employee&&)= delete;
-    employee operator=(employee(employee&)) = delete; 
+    employee& operator=(employee&&) = delete; 
     employee(const employee&) = delete;
-    employee operator = (employee(const employee&))= delete;
+    employee& operator = (employee(const employee&))= delete;
     employee()=default;
 
     int id() const { return _id; }

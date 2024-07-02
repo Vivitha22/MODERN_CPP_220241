@@ -51,3 +51,5 @@ For linked list
             -access the element and do something with it
 
 iterators are abstruction over pointer to an element
+
+

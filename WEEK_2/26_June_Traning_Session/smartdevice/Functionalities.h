@@ -3,19 +3,22 @@
 
 #include "SmartDevice.h"
 #include<functional>
-// #include<list>
+#include<list>
 
-// using SmartDeviceContainer = std::list<SmartDevice*>;
+// using Predicate = 
+using SmartDeviceContainer = std::list<SmartDevice*>;
 
 using Predicate = std::function<bool(const SmartDevice*)>;
 
-void CreateObjects(SmartDevice** devices, unsigned int size);
+void CreateObjects(SmartDeviceContainer& devices);
 
-void Deallocate(const SmartDevice** devices, const unsigned int size);
+void Deallocate(SmartDeviceContainer& devices);
 
-void FindIthIndexValue(const SmartDevice* device, unsigned int idx);
+void FilterDevies(const Predicate fn, const SmartDeviceContainer& devices);
 
-void FindMaxGSTDeviceId(const SmartDevice** devices, unsigned int idx);
+void FindIthIndexValue(const Predicate fun, const SmartDeviceContainer& devices);
+
+void FindMaxGSTDeviceId(const SmartDeviceContainer& devices);
 
 
 /*
@@ -26,7 +29,7 @@ void FindMaxGSTDeviceId(const SmartDevice** devices, unsigned int idx);
     example : show details of all devices whose with proce over 6000.0f
 */
 
-void FilterDevies(Predicate fn, const SmartDevice** devices, const unsigned int size);
+
 
 //in tech terms a fun take single value as input and return true or false{bool return function} those functions are called PREDICATE
 /*

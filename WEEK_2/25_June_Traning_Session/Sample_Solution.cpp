@@ -38,6 +38,7 @@ void Adaptor(container fn, datacontainer& data ){
     }
 }
 
+
 void findVowels(const std::string& val){
     if(val == ""){
         std::cerr <<"Cant find any vowels\n";

@@ -10,7 +10,6 @@ int main() {
 
     FilterDevies([](const SmartDevice* s){return s->deviceTechnology() == Technology::BLUETOOTH ; }, (const SmartDevice**)devices , 3);
 
-    Deallocate((const SmartDevice**)devices,3);
-
+    Deallocate((const SmartDevice**)devices,3); 
 
 }
