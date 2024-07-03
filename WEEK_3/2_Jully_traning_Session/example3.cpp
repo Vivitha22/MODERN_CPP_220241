@@ -1,7 +1,7 @@
 /*
     Terminologies :
 
-       1} CPU:set of hardware responsible for executing tasks in a computing system
+       1} CPU : set of hardware responsible for executing tasks in a computing system
  
        2) System : Any computing device
 
