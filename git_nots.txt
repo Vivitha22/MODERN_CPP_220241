@@ -1,0 +1,53 @@
+Git
+
+ls -al 
+rm -fr .git/
+git init .
+Git branch
+pwd
+git add .
+Git status
+git rm –chached 1.txt //this will not be in the staging area
+git commit  -m  “message”
+git log
+
+ls -al ~/
+
+fin / -iname "id_rsa.pub" -type f 2>/dev/null
+
+
+
+after creating repository in git website
+
+git remote add "name" "ssh" ------>note: ssh is from the git website
+
+git remote show -->it will show your name you gave in the previous step
+
+git remote git-url origin
+
+git remote push --help -----> this is to see all the options for push
+
+git push "name" "branch" --set-upstream
+git push origin master --set-upstream
+
+git pull origin
+
+git checkout -b 'feature_addition'
+
+git log
+
+git rebase master 
+
+git checkout master
+
+git log
+
+git rebase feature_addition
+
+git log
+
+git push origin master --set-upstream
+
+
+
+git log
