@@ -32,9 +32,11 @@ git push origin master --set-upstream
 
 git pull origin
 
-git checkout -b 'feature_addition'
+git checkout -b 'feature_addition' -->for first time
 
 git log
+
+git checkout feature_addition
 
 git rebase master 
 
@@ -51,3 +53,4 @@ git push origin master --set-upstream
 
 
 git log
+

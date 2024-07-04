@@ -8,7 +8,9 @@ int main(){
     //step 2 : execute parallel functions
     Operation::MapThreads();
     Operation::JoinThreads();
+     Operation::FindAverageCost();
 
+     Operation::DisplayInsuranceAmount();
 
     std::optional<unsigned int> result1 = Operation::FindSeatCountForGivenId("b1");
 

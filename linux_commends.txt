@@ -1,0 +1,34 @@
+^ -------->start a line
+ 
+$ -------->end of a line
+ 
+\d -------->a digit
+ 
+[] -------->a character set
+     e.g : [a-z] set of lowercase alphabets
+     e.g : [0-9] set of digits 0 to 9 
+     e.g : [!@#] set of three characters ! @ or #
+ 
+*--------> 0 or more of the previous token
+    a* : 0 or  more occurrences of a
+    9* : 0 or more occurrences of 9
+ 
+ 
+? -------->1 or 0 occurrences of something
+    [0-9]? 0 or more occurrences of a number in the set of 0 to 9
+ 
+ 
++--------> 1 or more occurrences of something
+     H+  1 or more occurrences of continuous 'H' character
+     \d+  1 or more occurrences of continuous digit
+ 
+ 
+{} --------> how many times previous thing must occur
+    a{3}  precisly 3 occurrences of continuous a
+    a{3,} precisly 3 or more occurrences of continuous a
+    a{3,7} precisly 3,4,5,6 or 7 occurrences of continuous a           
+
+
+
+grep -E "what to search" "filename.txt"
+
