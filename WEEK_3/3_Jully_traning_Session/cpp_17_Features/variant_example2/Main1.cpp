@@ -30,7 +30,7 @@ int main(){
     VrType vr;
     Employee e1 {"Vivitha", 9000.0f};
     BusinessOwner b1 {"Kavitha",89000.0f};
-    vr = e1; //change vr to take BusinessOwner
+    // vr = e1; //change vr to take BusinessOwner
     Display(vr);
 
     vr = b1;
