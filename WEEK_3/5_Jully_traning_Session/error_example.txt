@@ -1,0 +1,5 @@
+1)excepted:
+    a semicolon is missing . Identify the line and look for left of the token and previous lines to fix
+2) undefined referenceto "something"(means a object/variable): ---->
+    a)splling/tying mistake(typo)
+    b)
