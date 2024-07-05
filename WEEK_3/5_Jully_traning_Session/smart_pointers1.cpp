@@ -28,6 +28,7 @@ int main(){
     char* ptr1 = (char*)malloc(4);
     char* ptr2 = (char*)malloc(1);
 
+    //unique pointers
     std::unique_ptr<int> ptr1  {  (int*)malloc(4)}; //since its object we can create objects
     std::unique_ptr<int> ptr2 {new int()};
     std::unique_ptr<char> ptr3 {(char*)malloc(1)}  ;
@@ -38,7 +39,7 @@ int main(){
     else{
         // throw
     }
-    std::unique_ptr<Data> ptr { new Data{1000} };
+    std::unique_ptr<Data> ptr4 { new Data{1000} };
 
 }
 
