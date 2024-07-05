@@ -1,5 +1,5 @@
 /*
-    elision: no t do something, not perorm something, ingore/ avoid something
+    elision: not do something, not perform something, ingore/ avoid something
 
     Gurateed copy Elision : cpp17
     This will give you the guranty that copy is not allowed, it is done by the compiler automatically
