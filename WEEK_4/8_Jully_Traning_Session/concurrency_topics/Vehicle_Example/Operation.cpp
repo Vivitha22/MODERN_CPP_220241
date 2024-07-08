@@ -40,9 +40,9 @@ std::optional<VrType> Operation::ReturnMatchingInstance(std::string id)
 {
     if (m_data.empty())
     {
-        // mt.lock();
+        mt.lock();
         std::cerr << "Empty data container\n";
-        // mt.unlock();
+        mt.unlock();
     }
     std::optional<VrType> result{std::nullopt};
     bool m_id_flag {false};
@@ -89,7 +89,9 @@ void Operation::DisplayInsuranceAmount()
 std::optional<unsigned int> Operation::FindSeatCountForGivenId(std::string id)
 {
     if(m_data.empty()){
-        std::cerr << "Empty data container\n";   
+        mt.lock();
+        std::cerr << "Empty data container\n";
+        mt.unlock();   
     }
     std::optional<unsigned int>result {std::nullopt};
     bool matchFound {false};

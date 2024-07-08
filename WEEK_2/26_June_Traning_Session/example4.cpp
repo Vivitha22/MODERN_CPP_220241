@@ -13,6 +13,7 @@ void Magic(std::reference_wrapper<int> data){
 }
 int main(){
     int n1=10;
+    int &n2 = n1;
     // int& ref=n1; //ref is a reference to n1
     std::reference_wrapper<int> ref = n1; //reference to n1
     // ref is an alternate name for n1 in the main function
@@ -21,9 +22,9 @@ int main(){
 
     Magic(n1);  //int&data = n1; 
 
-    // int& arr[1] {ref};
+    //int& arr[1] {ref};
 
-    // std::vector<int&> val {ref};
+    // std::vector<int&> val {n2};
 
     std::reference_wrapper<int> arr[1] {ref};
 

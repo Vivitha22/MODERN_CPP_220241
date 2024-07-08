@@ -1,25 +1,24 @@
+
 #include "Operation.h"
 
 int main(){
 
     //step 1 : make objects
     Operation::CreateCarsAndBikes();
-
     //step 2 : execute parallel functions
     Operation::MapThreads();
     Operation::JoinThreads();
-     Operation::FindAverageCost();
+    Operation::FindAverageCost();
 
-     Operation::DisplayInsuranceAmount();
+    Operation::DisplayInsuranceAmount();
 
-    std::optional<unsigned int> result1 = Operation::FindSeatCountForGivenId("b1");
+    std::optional<unsigned int> result1 = Operation::FindSeatCountForGivenId("B1");
 
-    if(result1 .has_value()){
+    if(result1.has_value()){
         std::cout<<"Seat count for id is :"<<result1.value()<<"\n";
 
     }
-
-    std::optional<VrType> result2 = Operation::ReturnMatchingInstance("c1");
+    std::optional<VrType> result2 = Operation::ReturnMatchingInstance("C1");
 
     if(result2.has_value()){
         std::cout<<"Matching instance found "<<"\n";
@@ -28,3 +27,4 @@ int main(){
 
     Operation::Deallocate();
 }
+

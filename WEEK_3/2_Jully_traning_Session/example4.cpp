@@ -26,7 +26,7 @@ public:
         std::cout<<"Square of "<<m_value<<" is : "<<m_value * m_value<<"\n";
         mt.unlock();
     }
-
+    
     int32_t addition(int32_t other){
         mt.lock();
         std::cout<<"ID : of the thread addition : "<<std::this_thread::get_id()<<"\n";

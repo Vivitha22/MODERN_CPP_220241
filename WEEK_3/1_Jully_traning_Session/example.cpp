@@ -46,7 +46,6 @@ int square(int number){
     return number*number;
 }
 
-
 int main(){
     auto cube_fn = [](int number){return number * number*number;};
 
