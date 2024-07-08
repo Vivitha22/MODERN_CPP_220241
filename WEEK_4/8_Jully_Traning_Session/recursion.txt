@@ -1,0 +1,34 @@
+
+add 1 or more inputs from the user
+ 
+example :
+
+inputs : 10,12,7,9,16
+ 
+10+12+7+9+16 : original problem
+
+|
+
+(22)+7+9+16
+
+|
+
+(22+7)+9+16
+
+|
+
+29+9+16
+
+|
+
+(29+9)+16
+
+|
+
+38+16
+
+|
+
+54
+ 
+git status
