@@ -21,7 +21,6 @@ int main(){
     
     if(res1.has_value()){
         std::cout<<"Seat count for id is :"<<res1.value()<<"\n";
-
     }
     std::future<std::optional<VrType>> result2 = std::async(Operation::ReturnMatchingInstance,"C1");
     std::optional<VrType> res2 = result2.get();

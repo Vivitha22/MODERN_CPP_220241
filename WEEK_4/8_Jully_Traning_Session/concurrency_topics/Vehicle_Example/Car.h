@@ -9,7 +9,7 @@ private:
     std::string m_id {""};
     float m_price{0.0f};
     unsigned int m_seatCount {0};
-    
+     
 public:
     float InsuranceAmount();
     
