@@ -18,7 +18,6 @@ void createObjects(DataContainer &engine)
 }
 
 
-
 std::optional<DataContainer> ReturnMatchingContainer(const DataContainer& engine, const Predicate& fn)
 {
     bool is_input_empty {false};
@@ -51,6 +50,7 @@ std::optional<DataContainer> ReturnMatchingContainer(const DataContainer& engine
     
 }
 
+
 bool AtleastOneInstanceMatching(const DataContainer &data, const Predicate& fn)
 {
     if(data.empty())
@@ -66,7 +66,6 @@ bool AtleastOneInstanceMatching(const DataContainer &data, const Predicate& fn)
     }
     return false;
 }
-
 
 int AverageEngineCC(const DataContainer &data)
 {

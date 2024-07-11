@@ -44,13 +44,12 @@ void demo(int&& n1){
         n1 is non const rvalue regerence to an integer only rvalues are accepted, rvalues will be assigned to n1
         n1 can be modified
     */
-    
 
 }
 
 void demo(const int&& n1){
     /*
-        n1 is a constant rvalue regerence to an inter oly rvalues are accepted, rvalues will be assigned to n1
+        n1 is a constant rvalue reference to an int ,only rvalues are accepted, rvalues will be assigned to n1
         n1 cannot be modified in demo
     */
 }

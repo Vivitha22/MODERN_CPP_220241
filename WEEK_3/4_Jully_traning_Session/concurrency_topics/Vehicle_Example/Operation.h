@@ -7,8 +7,6 @@
     6)FindSeatCountForGivenId : Fetches vehicle based on ID and returns corresponding seat_count;
 */
 
-
-
 #ifndef OPERATION_H
 #define OPERATION_H
 
@@ -57,15 +55,12 @@ public:
     static std::optional<VrType> ReturnMatchingInstance(std::string id);
     static void Deallocate();
     static void DisplayInsuranceAmount();
-
     /*
         scenario 1 : id found, matches with a car, seat count returned 
         scenario 2 : id found, matches with a bike ---> nullopt
         scenario 3 : id not found : nullopt (print a message before return)
     */
-    
     static std::optional<unsigned int>FindSeatCountForGivenId(std::string id);
-
     /*
         MapThreads : attachs a thread to a functinality
     */

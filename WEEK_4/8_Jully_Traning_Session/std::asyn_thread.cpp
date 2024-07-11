@@ -14,7 +14,7 @@ int64_t Magic(int32_t number){
 
 int main(){
     std::future<int64_t> ans = std::async( &Magic,  10);//as soon as this line is executed the thread is created and starts the work;
-    //if thread is still executing, mail will get blocked at theis line till completion of magic function.
+    //if thread is still executing, mail will get blocked at this line till completion of magic function.
     std::cout<<ans.get()<<"\n";//this get() function fetchs the returned value from the async thread.
 
 }

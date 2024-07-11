@@ -10,7 +10,7 @@ void createObjects(BankAccountContainer &account)
 void showDetails(const BankAccountContainer &account, long number)
 {
     bool flag {false};
-    for(const BankAccount* b:account){
+    for(const BankAccount& b:account){
         if(b->accountNumber() == number){
             std::cout<<*b<<"\n";
             flag=true;
@@ -22,10 +22,10 @@ void showDetails(const BankAccountContainer &account, long number)
     }
 }
 
-void countVisaCard(const Predicate fn, BankAccountContainer &account)
+void countVisaCard(const Predicate& fn, BankAccountContainer &account)
 {
     int count {0};
-    for(const BankAccount* b: account){
+    for(const BankAccount& b: account){
         if(fn(b)){
             count++;
         }

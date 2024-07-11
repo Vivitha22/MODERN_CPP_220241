@@ -52,5 +52,5 @@ int main(){
 
     magic(Data {100}); //-->uniform initialization
     //THe above line works beacause an rvalue of type Data is used to initialize an object of type Data. 
-    //Complier simply refactors/,pdofoed tje cpde as Data d1{100}
+    //Complier simply refactors/modified the code as Data d1{100}
 }

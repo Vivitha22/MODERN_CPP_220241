@@ -27,6 +27,7 @@
 // }
 
 // or in cpp17 we use to do
+//fold expresion
 template <typename... T>
 auto add(T... n1){
     return (n1+ ...);

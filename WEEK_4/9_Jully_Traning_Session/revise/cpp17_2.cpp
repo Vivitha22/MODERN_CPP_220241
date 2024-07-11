@@ -33,3 +33,5 @@ int main(){
     v = A{};
  
 }
+
+//if you  access incorrect index of a variant runtime error will happen-->std::bad_variant_access exception

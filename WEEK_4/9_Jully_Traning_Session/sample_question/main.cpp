@@ -14,7 +14,6 @@ int main(){
         }
     }
 
-
     auto fn = [](const EnginePtr& engine){return engine->engineType() == EngineType::HYBRID ; };
     std::future<bool> result2 = std::async(&AtleastOneInstanceMatching,std::ref(data),fn);
     std::cout<<std::boolalpha << result2.get()<<"\n"; 
@@ -23,5 +22,4 @@ int main(){
              //return type
     std::future<int> result3 = std::async(&AverageEngineCC,data);
     std::cout<<"Average : \t"<<result3.get()<<"\n";
-
 }

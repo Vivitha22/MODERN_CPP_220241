@@ -29,6 +29,7 @@
 using VrType = std::variant<Car*,Bike*>;
 using DataContainer = std::list<VrType>;
 using ThreadContainer = std::list<std::thread>;
+using predicat = std::function<bool(VrType)>;
 
 
 class Operation

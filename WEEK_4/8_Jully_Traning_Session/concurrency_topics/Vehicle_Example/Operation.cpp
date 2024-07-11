@@ -27,6 +27,7 @@ void Operation::FindAverageCost()
     {
         std::visit([&](auto &&val)
                    { total += val->price(); }, v);
+        
     }
     if (!m_data.empty())
     {

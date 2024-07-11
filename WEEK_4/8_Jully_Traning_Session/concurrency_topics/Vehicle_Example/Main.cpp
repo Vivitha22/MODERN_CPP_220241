@@ -1,4 +1,3 @@
-
 #include "Operation.h"
 
 int main(){
@@ -10,11 +9,7 @@ int main(){
     Operation::JoinThreads();
 
     //step3::serial function
-    Operation::FindAverageCost();
-
-
-    Operation::DisplayInsuranceAmount();
-
+   
     std::future<std::optional<unsigned int>> result1 = std::async(Operation::FindSeatCountForGivenId,"B1");
 
     std::optional<unsigned int> res1 = result1.get();
@@ -33,4 +28,3 @@ int main(){
 
     Operation::Deallocate();
 }
-
