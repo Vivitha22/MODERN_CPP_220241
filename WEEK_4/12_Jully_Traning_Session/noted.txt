@@ -1,0 +1,30 @@
+Effective use of STL 
+
+1)STL containers,
+2)STL algorithms(more commonly used)
+3)Threoetical understanding DS and algorithms
+
+
+/*
+    Key : Attribute or the identifer for a data item 
+    e.g : employee id is key for each employee object.
+    Hashing function is always applied on the key
+
+    Hashing/Hash function :It is an mathemetical operation to determine the exact row(bucket) wher each key and its related object will be placed.
+
+    e.g: ID mode 4
+
+    Hash/Hash value : output of mathematical operation(hash function) applied on the key
+    e.g : 0,1,2,3 are hash value
+
+    Collision : Situation where hash function applied on 2 or more key coincide tally gives the same vlaue
+
+    e.g: 203 mod 4 and 103 mod 4 gives answer as 3 in both the cases
+
+    collision resolution technique:Actions that can be taken to resolve collision 
+        e.g: linear probing, double hasing, open chaning, etc.
+*/
+
+/*
+    hash table data structure!
+*/

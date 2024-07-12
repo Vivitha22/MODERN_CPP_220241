@@ -50,7 +50,7 @@ int main(){
     MathOperation m1{100};
     // std::thread t1 {&MathOperation::square, MathOperation{10}};
    
-   std::thread t1 {&MathOperation::square, &m1};
+    std::thread t1 {&MathOperation::square, &m1};
 
     //you cannot capture return values from a function when executing them via std::thread
 

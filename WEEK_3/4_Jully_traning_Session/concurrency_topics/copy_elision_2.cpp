@@ -38,6 +38,7 @@ Data magic(){
 int main(){
     Data d1 = magic(); //-->this is called initialization
     //d1 object is intialized by the return value of magic function  -->it is like emplace
+    std::cout<<d1;
 }
 
 // Here magic to main

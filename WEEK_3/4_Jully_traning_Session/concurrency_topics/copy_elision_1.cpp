@@ -47,7 +47,7 @@ int main(){
 
             --->TO SOLVE THIS USE EXPLICIT IN THE PARAMATERAIZED constructor 
     */
-    // magic(d1); ->This will not work beacuse the coopy is diabled
+    // magic(d1); ->This will not work beacuse the copy is diabled
     // magic(99); // ---->This will not work beacuse conversion is disabled (explicit)
 
     magic(Data {100}); //-->uniform initialization

@@ -30,7 +30,7 @@
 //fold expresion
 template <typename... T>
 auto add(T... n1){
-    return (n1+ ...);
+    return (n1+ ...);  //{1,2,3,4}  -> (1+(2+3))
 }
 
 int main(){
