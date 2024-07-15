@@ -3,7 +3,7 @@
 #include"Employee.h"
 #include<functional>
 
-using Predicate = std::function<bool()>;
+using Predicate = std::function<bool(const std::pair<const unsigned int, Employee>&)>;
 
 using Container = std::unordered_map<unsigned int, Employee>;
 
@@ -66,20 +66,30 @@ void FindEmployeeById(const Container& data, unsigned int key){
     }
 }
 
-void FilterEmployeeByPredicate(const Container& data, Predicate& fn){
+void FilterEmployeeByPredicate(const Container& data, Predicate fn){
     // if(fn( reinterpret_cast<const Employee&>(v))){
 
     // }
     /*
         do not apply filter on dey ondition is bassed on objects value
     */
-
-    for(const std::pair<unsigned int,Employee>& )
+   //Note : while extracting pair from an unorder map, the key part shall always be CONSTANT!
+    
+    for(const std::pair<const unsigned int, Employee>& p : data){
+        if(fn(p)){
+            std::cout<<p.second<<"\n";
+        }
+    }
 }
+
 int main(){
     Container data;
     CreateObject(data);
     DisplayMapUsingStructureBinding(data);
+    FilterEmployeeByPredicate(
+        data,[](const std::pair<const unsigned int, Employee>& p){
+        return p.second.age() > 25;
+    });
  
 
 }

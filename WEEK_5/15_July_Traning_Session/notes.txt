@@ -1,0 +1,25 @@
+ ----------------------------------------------------------
+|   c-style array                                          |
+|   STL Array : std::array<T,S> e,g : std::array<int,5>;   |
+|   STL Vector : e.g :std::vector<int>;                    |
+|   STL List : (doubly linked list) : e.g :std::list<int>; |
+ ----------------------------------------------------------
+
+------------------------------------------------------------------------------------
+STL unordered_map (hast table key-value pair): std::unordered_map<int, std::string>;|    
+STL unordered_set (hashable key) : std::unordered_set <int>                         |
+    -> Container which have unordered are based on the hash tables                  |
+    -> Container without unordered in it are trees                                  |
+            e.g: std::set, std::map;                                                |
+------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------
+Adaptors :these are ds whose functionalities can be changed |
+std::stack                                                  |
+std::queue                                                  |
+std::priority_queue                                         |
+------------------------------------------------------------
+
+
+HEAP DS is the background for the "priority_queue"
