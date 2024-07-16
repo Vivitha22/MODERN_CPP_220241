@@ -1,0 +1,53 @@
+Basic CPP
+    - classes & objects
+    - inheritance - single, multilevel and multiple
+    - abstract classes using pure virtual functions
+    - virtual keyword for runtime polymorphism
+    - operator overloading [], (), pre-increment and pre-decrement,
+                            post-increment and post decrement, + operator , << operator
+    - constructors - copy, default and parameterized
+    - c-style arrays
+    - stack v/s heap allocation for objects
+    - method overloading v/s method overriding
+
+
+Modern CPP
+week 1
+    keywords
+        auto, decltype, using, explicit, nullptr
+    concepts
+        -for each loop, enum classes, defaulted & deleted functions, constructor delegation,
+        member list initialization, uniform initialization, in-class initialization
+        -rvalue references and their use for move semantics
+week 2
+    - lambdas, function pointer, creating adaptor for filter and map operations
+    - std::ref, std::reference_wrapper, std::bind and std::function wrapper
+
+week 3
+    - concurrency:
+        std::thread, join, mutex, lock_guard, condition_variable, std::unique_lock
+        std::async with future returns
+    - cpp 17 :
+        variadic templates, fold expressions, std::optional, std::variant, if-init, structured-binding
+    - smart pointer 
+        - creating std::unique_ptr, working with std::shared_ptr
+
+week 4
+    - containers
+        - c-style array, std::array, std::list, std::vector, std::unordered_map, std::unordered_set
+        - std::stack, std::queue, std::deque, std::priority_queue
+
+    - algorithms
+        - std::any_of, std::all_of, std::none_of
+        - std_copy, std::copy_n, std::copy_if
+        - std::accumulate,
+        - std::min_element, std::max_element,
+        - std::sort
+        - std::transform
+        - std::next and std::advance
+        - std::distance
+        - std::fill and std::iota
+
+    - other concepts    
+
+        -use of std::weak_ptr, use of std::future and promise channels
