@@ -1,0 +1,118 @@
+Notes:
+
+    1) Experience is intangible and beyond the scope of this roadmap, higher the experience, better!
+    2) The roadmap is a guideline, implemmentation is upto the follower!
+    3) The roadmap is industry proven, recession-resistant, honest, malpractice ignoring, cheating prohibiting
+
+15 steps[milestones, skills]
+
+
+        ---------------------
+       |Foundation : 3 months|
+------  ---------------------  ---------------------------------------------------------------------------------------------- 
+1) Absolute mastery in atleast 1 language, respectable knowledge in 2 more
+ 
+preferred combination : a system's language, an OOP language,    a scripting language
+               example:  C++/Rust,           java/kotlin/C++ ,   python or shell scripting
+ 
+2) Linear Data Structure
+            - arrays, lists, stacks, queues, vector
+ 
+3) Command-Line
+        - unix/linux command-line or powershell in windows!
+        [    
+            basic utilities,
+            some helpful tools,
+            regex,
+            find common/equivalent,
+            file permissions,
+            user permissions,
+            sudo previleges,
+            chroot and filesystems,
+            damenons and ports etc
+        ]
+-------------------------------------------------------------------------------------------------------------------------
+    
+
+
+
+         ----------------------
+        |INTERMEDIATE - 1 month|
+-------  ----------------------  ------------------------------------------------------------------------------------------
+
+4) Operating system fundamentals
+    - process life cycle , threads, scheduling, critical session, semaphores, virtual memory, Inter-ProcessCommunication, signals
+    - 
+
+5) Computer architecture(at least the essential concepts)
+    - memory,cache, buses, components interact with each other
+    - direct connection with OS
+
+6) Computer Networks
+    - ip,ports, osi layers,  protocols 
+    - VANs, VPN , Subnetting 
+    - socket programming, firewalls, algorithms for networks[optional*]
+
+    *Note : optional only if you are a develper, If you job is CI/CD, virtualization, containerization, IASS , it is mandatory
+
+7) Database Management system   
+    - SQL and NoSQL, one each [e.g: MariaDB & MongoDB]
+    - applied knowlege, not just thoretical.
+    Do actual joins, CRUD, permissions, export, import, etc.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+        --------------------
+       | HIGHER-INTERMEDIATE|
+------  --------------------  ----------------------------------------------------------------------------------------------
+
+8) virtualization Technologies
+    -Hypervisors Creating and managing VMs, advantages and disadvantages
+    - Hands-on creations of VMs on laptops/Desktop is desired!
+
+9) Containerization  
+    - what are containers, VMs v/s Container, creating containers for develpment
+    - Docker, podman, etc
+    - after learning containers, you "MAY HAVE TO" learn container orchestration tools like "Kubernets aka K8s"
+
+10) API Consumption/Testing Technologies
+    - POSTMAN
+    - libraries for API Consumption: e.g : requests in python, curl on c , etc
+    - Learn how to intergrate data from into apps including 
+        -Authentication, headers, status code and etc
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+         -------------------------------
+        | ADVANCED/ULTRA_PRO_MAX TOPICS |
+-------  -------------------------------  ----------------------------------------------------------------------------------
+
+11) Non-liner Data Structure
+    -trees, graphs, graph theory, implementation of tree based data structures
+    - processing data to solve problems using trees and graphs
+
+
+12) Advanced algorithms
+    - Graph algorithms, greedy, NP, P problems , etc
+    - Thres section to connect non - Linear data Structure
+
+13) Competitive coding skills [THE WORST PART OF THE MILESTONE]
+    - Start with easy problems
+    - Buy a pro subscription of either
+        codechef, leeetcode, algoexpert.io, etc
+    - practice INTERMEDIATE & advanced problems under pro licence
+
+NOTE: Competitive coding is not about remembering exact solution by memorising them.  It is about recognising problems that are similar to the oes you have solved so you can build solution quickly
+
+14) Proper version control 
+    - goood understanding of atleast on version control tool - git
+    - Work with a team so that you understand challenges of version control
+
+15) Cloud computing :
+    - pre- requesities : CN , technical exposure
+    - Either aws, AZURE or SCP(in this preferential order) must be learn
+    - actual use of popular services (e.g route 53, EC2, DynamoDB of AWS)
+    - 
