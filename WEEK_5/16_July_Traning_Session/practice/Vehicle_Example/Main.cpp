@@ -9,7 +9,7 @@ int main(){
     //step 2 : execute parallel functions
     MapThreads(threads,data);
     JoinThreads(threads);
-
+    
     std::future< std::optional<unsigned int>> result1 = std::async(&FindSeatCountForGivenId,std::ref(data),"B1");
     std::optional<unsigned int> res1=result1.get();
     if(res1.has_value()){
