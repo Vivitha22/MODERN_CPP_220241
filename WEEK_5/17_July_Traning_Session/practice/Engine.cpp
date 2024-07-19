@@ -8,3 +8,4 @@ std::ostream &operator<<(std::ostream &os, const Engine &rhs) {
            << " engine_type: " << (int)rhs.engine_type;
         return os;
     }
+    

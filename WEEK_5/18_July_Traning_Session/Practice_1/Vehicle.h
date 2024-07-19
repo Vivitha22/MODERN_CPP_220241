@@ -43,7 +43,7 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
 
     
-    float CalculateRegistrationCose();
+    float CalculateRegistrationCose() const;
     
 };
 

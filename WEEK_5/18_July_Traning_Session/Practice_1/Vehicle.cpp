@@ -4,18 +4,19 @@ Vehicle::Vehicle(VehicleType vtype, VehicleStandard standard, FuelType ftype, En
 {
 }
 
-float Vehicle::CalculateRegistrationCose()
+float Vehicle::CalculateRegistrationCose() const
 {
+    float ans{0.0f};
     if(m_vehicle_fuel_type == FuelType::ICE){
-        return m_vehicle_price * 0.10f;
+        ans = m_vehicle_price * 0.10f;
     }
     else if( m_vehicle_fuel_type == FuelType::ALTERNATE_FUEL){
-        return m_vehicle_price * 0.10f;
+        ans = m_vehicle_price * 0.10f;
     }
     else{
-        return m_vehicle_price * 0.20f;
+        ans = m_vehicle_price * 0.20f;
     }
-    return 0.0f;
+    return ans;
 }
 
 std::ostream &operator<<(std::ostream &os, const Vehicle &rhs) {
