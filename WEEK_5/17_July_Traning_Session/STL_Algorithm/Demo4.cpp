@@ -72,7 +72,13 @@ int main(){
         2,
         std::inserter(n_result,n_result.begin())
     );
+    // for ( Employee& v: n_result){
+    //     std::cout<<v<<"\n";
+    // }
+    // std::cout<<n_result<<"\n";
     std::vector<Employee*> result_pointers {rawpointers.size()};
+
+
 
     //example 3 : copy all items from rawpointeremployees into a destination------>copy all the datas to the pointers
     std::copy(

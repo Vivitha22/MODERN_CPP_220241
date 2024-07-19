@@ -89,7 +89,7 @@ void DisplayInsuranceAmount(const DataContainer& data){
         mt.unlock();  
     }
     for(auto&  [k,v] :data){
-        std::visit([](auto&& val){mt.lock(); std::cout<<val->InsuranceAmount()<<"\n";mt.unlock();}, v);
+        std::visit([&](auto&& val){mt.lock(); std::cout<<"The insurance amount is "<<k<<" : "<<val->InsuranceAmount()<<"\n";mt.unlock();}, v);
     }
 }
 
@@ -123,9 +123,9 @@ std::optional<unsigned int>FindSeatCountForGivenId(const DataContainer& data,std
 
 
 void MapThreads(ThreadContainer& threads, const DataContainer& data){
-    threads.emplace_back(&FindAverageCost,std::ref(data),"C1");
+    threads.emplace_back(FindAverageCost,std::ref(data),"C1");
     // threads.emplace( ReturnMatchingInstance, "b1");
-    threads.emplace_back(&DisplayInsuranceAmount,std::ref(data));
+    threads.emplace_back(DisplayInsuranceAmount,std::ref(data));
     // threads.emplace( FindSeatCountForGivenId, "c1");
 }
 
