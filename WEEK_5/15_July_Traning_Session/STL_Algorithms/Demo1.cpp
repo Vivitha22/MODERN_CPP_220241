@@ -34,7 +34,6 @@ void CreateObjects(SmartPointerHeapEmployee& smartPointers){
 
 }
 
-
 int main(){
     StackMemoryEmployees stackptr{};
     RawPointerHeapEmployee rawpointers{};
@@ -82,5 +81,3 @@ int main(){
     std::cout<<result4<<"\n";
 
 }
-
-    

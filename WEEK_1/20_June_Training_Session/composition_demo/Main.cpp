@@ -5,7 +5,6 @@ int main(){
 
     CreateObjects(accounts);
     CountVISACards(accounts);
-    // 908819191
     ShowDetails(accounts,7654534468);
     DeallocateMemory(accounts);
 }

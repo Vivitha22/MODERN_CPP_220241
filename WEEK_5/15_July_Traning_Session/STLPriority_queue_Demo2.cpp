@@ -17,5 +17,4 @@ int main(){
 
     std::cout<<pq.top()<<"\n";
     //time complexity is O(log(n))
-
 }

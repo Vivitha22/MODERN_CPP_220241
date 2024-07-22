@@ -18,5 +18,5 @@ int main(){
         19
     );
 
-    std::for_each(data.begin(),data.end(), [] (int val){std::cout<<})
+    std::for_each(data.begin(),data.end(), [] (int val){std::cout<<val<<" ";});
 }

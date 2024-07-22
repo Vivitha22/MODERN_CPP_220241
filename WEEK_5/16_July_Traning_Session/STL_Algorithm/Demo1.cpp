@@ -59,5 +59,3 @@ int main(){
     );
     std::cout<<"The name of the employee with minimum experience is : "<<(*result).name()<<"\n";
 }
-
-    

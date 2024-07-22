@@ -47,7 +47,7 @@ int main(){
     int data{0};
     std::cin>>data;
 
-    //fulltil primise. send a signal to future attached to the promise it will go to line 30;
+    //fullfil promise. send a signal to future attached to the promise it will go to line 30;
     pr.set_value(data);
     std::cout<<*res.get()<<"\n";
 }

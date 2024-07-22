@@ -9,8 +9,8 @@ int main() {
         write other parts of client code here
 
     */
-   DisplayCardDetails(accounts, 9088191);
+    DisplayCardDetails(accounts, 9088191);
     CountVISACards(accounts);
 
-   DeallocateMemory(accounts);
+    DeallocateMemory(accounts);
 }
