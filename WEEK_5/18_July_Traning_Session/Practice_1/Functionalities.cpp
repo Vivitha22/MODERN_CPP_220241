@@ -1,4 +1,4 @@
-ko#include "Functionalities.h"
+#include "Functionalities.h"
 
 std::mutex mt;
 
@@ -6,6 +6,7 @@ HashingFun hash_fn = [](const VehiclePtr &e)
 { return std::hash<MultimediaType>()(e->vehicleMultimediaType()); };
 Eqfun eq_fn = [](const VehiclePtr &v1, const VehiclePtr &v2)
 { return v1->vehicleMultimediaType() == v2->vehicleMultimediaType(); };
+
 Eqfun fn = [](const VehiclePtr &v1, const VehiclePtr &v2)
 { return v1->vehiclePrice() < v2->vehiclePrice(); };
 
@@ -20,24 +21,23 @@ auto fn =
 void CreateObjects(DataContainer &data)
 {
     data.emplace_back(std::make_shared<Vehicle>(VehicleType::COMMERCIAL, VehicleStandard::BS4, FuelType::ALTERNATE_FUEL, EngineType::HYBRID, MultimediaType::ANALOG, 9000.0f));
-    data.emplace_back(new Vehicle(VehicleType::PRIVATE, VehicleStandard::BS4, FuelType::ICE, EngineType::NA, MultimediaType::ANDROID_SMART, 8000.0f));
-    data.emplace_back(new Vehicle(VehicleType::RENTAL, VehicleStandard::BS6, FuelType::OTHER, EngineType::REGULAR, MultimediaType::APPLE_ANDROID_SMART, 7000.0f));
-    data.emplace_back(new Vehicle(VehicleType::COMMERCIAL, VehicleStandard::NS6_2, FuelType::ALTERNATE_FUEL, EngineType::HYBRID, MultimediaType::APPLE_SMART, 6000.0f));
-    data.emplace_back(new Vehicle(VehicleType::PRIVATE, VehicleStandard::OTHER, FuelType::OTHER, EngineType::NA, MultimediaType::APPLE_SMART, 5000.0f));
+    data.emplace_back(std::make_shared<Vehicle>(VehicleType::PRIVATE, VehicleStandard::BS4, FuelType::ICE, EngineType::NA, MultimediaType::ANDROID_SMART, 8000.0f));
+    data.emplace_back(std::make_shared<Vehicle>(VehicleType::RENTAL, VehicleStandard::BS6, FuelType::OTHER, EngineType::REGULAR, MultimediaType::APPLE_ANDROID_SMART, 7000.0f));
+    data.emplace_back(std::make_shared<Vehicle>(VehicleType::COMMERCIAL, VehicleStandard::NS6_2, FuelType::ALTERNATE_FUEL, EngineType::HYBRID, MultimediaType::APPLE_SMART, 6000.0f));
+    data.emplace_back(std::make_shared<Vehicle>(VehicleType::PRIVATE, VehicleStandard::OTHER, FuelType::OTHER, EngineType::NA, MultimediaType::APPLE_SMART, 5000.0f));
 }
 
 std::optional<PriorityQueue> HighestVehiclePrice(const DataContainer &data)
 {
     PriorityQueue pf(data.begin(), data.end(), fn);
     return pf;
-    // return PriorityQueue();
 }
 
 std::optional<unorderSet> ReturnMatchingVehicle(const DataContainer &data)
 {
 
     std::unordered_set<VehiclePtr, decltype(hash_fn), decltype(eq_fn)> result{5, hash_fn, eq_fn};
-    for (const VehiclePtr v : data)
+    for (const VehiclePtr& v : data)
     {
         result.emplace(v);
     }

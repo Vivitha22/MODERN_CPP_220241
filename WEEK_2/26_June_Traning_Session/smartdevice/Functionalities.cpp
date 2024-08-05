@@ -32,7 +32,6 @@ void CreateObjects(SmartDeviceContainer &devices)
 
     float* values3 = new float[3];
 
-
     values3[0] = 10.21f; values3[1] = 9.21f; values3[2] = 11.22f;
 
     devices.emplace_back(new SmartDevice("101", "Mobile", 9000.0f, Technology::BLUETOOTH, values1));
@@ -71,7 +70,6 @@ void FindMaxGSTDeviceId(const SmartDeviceContainer &devices)
     for(const SmartDevice* d:devices){
         max = d->CalculateGstCost();
         break;
-
     }
     for(const SmartDevice* d:devices){
         if(max < d->CalculateGstCost()){
@@ -90,8 +88,11 @@ void FilterDevies(const Predicate fn, const SmartDeviceContainer& devices)
     bool atleastOneMatchingDeviceFound = false;
 
     for(const SmartDevice* d:devices){
-        std::cout<<*d<<"\n";
-        atleastOneMatchingDeviceFound = true;
+        if(fn(d)){
+            std::cout<<*d<<"\n";
+            atleastOneMatchingDeviceFound = true;
+        }
+       
     }
     if(!atleastOneMatchingDeviceFound){
         std::cout<<"No matcing instance found\n";

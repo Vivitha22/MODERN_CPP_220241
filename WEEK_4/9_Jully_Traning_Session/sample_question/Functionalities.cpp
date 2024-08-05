@@ -30,23 +30,24 @@ std::optional<DataContainer> ReturnMatchingContainer(const DataContainer& engine
     }
     // for(std::shared_ptr<Engine> val:engine)
     DataContainer result {};
-    for(const EnginePtr val:engine)
+    for(const EnginePtr& val:engine)
     {
         if(fn(val)){
 
             result.emplace_back(val);
         }
     }
-    if(!is_input_empty && result.empty()){
-        // std::cout<<"The container is empty";
-        return std::nullopt;
-    }
-    else if(!is_input_empty && !result.empty()){
-        return result;
-    }
-    else{
-        return std::nullopt;
-    }
+    // if(!is_input_empty && result.empty()){
+    //     // std::cout<<"The container is empty";
+    //     return std::nullopt;
+    // }
+    // else if(!is_input_empty && !result.empty()){
+    //     return result;
+    // }
+    // else{
+    //     return std::nullopt;
+    // }
+    return result;
     
 }
 

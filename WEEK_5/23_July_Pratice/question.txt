@@ -1,0 +1,35 @@
+Create a class Employee with the following attributes
+- id – std::string
+- name – std::string
+- salary – float
+- department – enum HR, IT, ADMIN or OTHER
+- experience – float
+
+    - A function CalculateTax which return 10% of salary as tax for employees with salary less than or equal to 90000, else 15% of salary
+
+
+Create the following functionalities in either a class or as global functions
+
+    - A function to create 5 objects of Employee class on the heap. Each object 
+    must be managed by a shared_ptr. The objects must be stored in a unordered_map.
+
+    - A function to return a priority queue of all smart pointers in the data container where max priority is given to Employee with highest experience
+    [Hint: Create a priority_queue]
+
+    - A function to return one Employee of each department 
+    from the data container. 
+    Hint: If there are 5 objects with types HR, ADMIN, HR, IT, return the first 3 objects only (unique category objects)
+    [Hint: Create an unordered_set]
+
+- A function to print the details of the employee with maximum salary
+[hint : use max_element]
+
+    - A function to return a vector of instances which satisfy the predicate passed as a parameter while calling the function
+    [Hint: Use copy_if]
+
+    - A function to check if all vehicles have experience above 10.0f or not
+    [Hint: all_of]
+
+    - A function to find the average of CalculateTax function value
+    [Hint: Use accumulate]
+

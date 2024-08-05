@@ -18,18 +18,13 @@ using DataContainer = std::vector<VehiclePtr>;
 using ListContainer = std::list<Vehicle>;
 using Predicate = std::function<bool(const VehiclePtr&)>;
 
-
 using HashingFun = std::function<bool(const VehiclePtr&)>;
 using Eqfun = std::function<bool(const VehiclePtr&, const VehiclePtr&)>;
 extern HashingFun hash_fn;
 extern Eqfun eq_fn;
 extern Eqfun fn;
 
-using PriorityQueue= std::priority_queue<VehiclePtr,DataContainer,decltype(fn)>;
-
-
-
-    
+using PriorityQueue= std::priority_queue<VehiclePtr,DataContainer,decltype(fn)>;    
 using unorderSet = std::unordered_set<VehiclePtr, decltype(hash_fn),decltype(eq_fn)>;
 // using 
 

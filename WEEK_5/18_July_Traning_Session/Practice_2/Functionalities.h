@@ -35,6 +35,7 @@ inline std::size_t hash_logic(const VehiclePtr& v){
     //<MultimediaType>() this triger the constructor , this will return a r value, one bracket is to make the object, one to call.
 }
 extern std::function<std::size_t(const VehiclePtr& v)> hash_lambda;
+
 extern std::function<bool(const VehiclePtr& v1, const VehiclePtr& v2)> comparison_fn;
 
 

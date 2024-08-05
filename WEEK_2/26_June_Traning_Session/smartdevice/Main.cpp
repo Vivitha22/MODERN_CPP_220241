@@ -12,7 +12,9 @@ int main() {
 
     FilterDevies( [](const SmartDevice* s){return s->price() > 0.0f ;} , devices);
 
-    FilterDevies([](const SmartDevice* s){return s->deviceTechnology() == Technology::BLUETOOTH ; }, devices);
+    auto fn =[](const SmartDevice* s){return s->deviceTechnology() == Technology::BLUETOOTH ;};
+
+    FilterDevies(fn, devices);
 //
     // Deallocate(devices); 
     Deallocate(devices);

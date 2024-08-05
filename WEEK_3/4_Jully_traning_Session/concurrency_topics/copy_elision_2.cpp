@@ -26,9 +26,7 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Data &rhs) {
         os << "m_value: " << rhs.m_value;
         return os;
-    }
-
-    
+    }  
 };
 
 Data magic(){

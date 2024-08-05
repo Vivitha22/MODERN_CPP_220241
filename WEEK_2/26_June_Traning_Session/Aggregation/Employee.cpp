@@ -1,11 +1,11 @@
 #include "Employee.h"
 
 Employee::Employee(int id, std::string name, ProjectRef pr)
-    : _project(pr)
+    : _id{id}, _name{name}, _project{pr}
 {
-    this->_id = id;
-    this->_name = name;
-    this->_project = pr;
+    // this->_id = id;
+    // this->_name = name;
+    // this->_project = pr;
 }
 
 Employee::~Employee()

@@ -63,11 +63,11 @@ int main(){
         smartPointers.begin(),
         smartPointers.end(),
         [](const EmployeePtr& e1){
-            return e1->experenceYear() > 8.0f;
+            return e1->experenceYear() > 4.0f;
         }
     );
 
-    std::cout<<"Count of employee with 8 years experence : "<<result2<<"\n";
+    std::cout<<"Count of employee with 8 years experence : " <<std::boolalpha << result2<<"\n";
 
     auto result = std::max_element(
         stackptr.begin(),
